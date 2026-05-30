@@ -1,8 +1,14 @@
+// Exercise 4: Explicit Data Type Casting
+
+// Description: This exercise tests your ability to safely handle numeric operations across different data types using explicit casting (as).
 // Initialize two variables: an integer representing a total score (87) and another integer representing the maximum possible score (100).
 
 // Write a function that accepts these two values, calculates the percentage score, and returns it as a 64-bit float (f64).
 
 // Note: Ensure you cast the variables before performing the division to avoid truncation!
+
+// Output :
+// Final Exam Result: 87.00%
 fn main() {
     let total_scores = 87;
     let max_scores = 100;

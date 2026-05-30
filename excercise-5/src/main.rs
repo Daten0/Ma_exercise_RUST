@@ -1,3 +1,7 @@
+// Exercise 5: The Config Shadow-Mesh
+
+// Description: Simulate a configuration loading pipeline where input types change, requiring strict scope management and shadowing.
+
 // Initialize a string variable containing a port number "8080".
 
 // Shadow the variable by parsing it into a numerical integer.
@@ -6,6 +10,9 @@
 
 // Print the verdict based on the function's return value.
 
+// Output:
+// Checking network configuration...
+// Is port 8080 safely accessible? true
 
 fn main() {
     let port = "1023";
