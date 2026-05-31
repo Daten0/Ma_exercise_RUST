@@ -18,13 +18,18 @@ fn main() {
     let port = "1023";
     let port: i32 = port.parse().expect("No Data types");
     println!("Checking network configuration...");
-    println!("Is port 8080 safely accessible? {}", check_port(port));
+    println!("Is port {} safely accessible? {}", port, check_port(port));
 }
 
 fn check_port(num: i32) -> bool {
-    if num > 1024 {
-        false
-    } else {
-        true
-    }
+    
+    // Before
+    // if num > 1024 {
+    //     false
+    // } else {
+    //     true
+    // }
+
+    // After
+    num > 1024
 }
