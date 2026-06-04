@@ -25,3 +25,11 @@ version = "0.1.0"
 [[package]]
 name = "excercise-6"
 version = "0.1.0"
+
+[[package]]
+name = "excercise-7"
+version = "0.1.0"
+
+[[package]]
+name = "excercise-8"
+version = "0.1.0"
