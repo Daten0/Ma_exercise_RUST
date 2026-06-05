@@ -46,7 +46,7 @@ fn main() {
         println!("This is a Warning: Cache state is currently Expired!");
     }
 
-    let empty_cache = CacheState::Empty;
+    let _empty_cache = CacheState::Empty;
     // println!("This is the empty state : {}", cache_state(empty_cache));
 
     if heavy_cache == CacheState::Hit(1024) {

@@ -1,4 +1,4 @@
 [workspace]
 resolver = "3"
-members = ["excercise-1", "excercise-2", "excercise-3", "excercise-4", "excercise-5", "excercise-6", "excercise-7", "excercise-8"]
+members = ["exercise-1", "exercise-10", "exercise-11", "exercise-12", "exercise-13", "exercise-14", "exercise-15", "exercise-2", "exercise-3", "exercise-4", "exercise-5", "exercise-6", "exercise-7", "exercise-8", "exercise-9"]
 

@@ -7,6 +7,14 @@ name = "excercise-1"
 version = "0.1.0"
 
 [[package]]
+name = "excercise-10"
+version = "0.1.0"
+
+[[package]]
+name = "excercise-11"
+version = "0.1.0"
+
+[[package]]
 name = "excercise-2"
 version = "0.1.0"
 
@@ -32,4 +40,24 @@ version = "0.1.0"
 
 [[package]]
 name = "excercise-8"
+version = "0.1.0"
+
+[[package]]
+name = "excercise-9"
+version = "0.1.0"
+
+[[package]]
+name = "exercise-12"
+version = "0.1.0"
+
+[[package]]
+name = "exercise-13"
+version = "0.1.0"
+
+[[package]]
+name = "exercise-14"
+version = "0.1.0"
+
+[[package]]
+name = "exercise-15"
 version = "0.1.0"
