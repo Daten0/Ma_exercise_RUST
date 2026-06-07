@@ -14,32 +14,27 @@ fn main() {
             successful_requests += 1
         }
 
-        println!("[SECURE LOG]: {}",mask_auth(log));
+        let auth = mask_auth(log);
+
+        println!("[SECURE LOG]: {}", auth);
     }
-    println!("Analysis Complete. Total Successful Requests (2xx): {:?}", successful_requests);
+    println!("Analysis Complete. Total Successful Requests (2xx): {}", successful_requests);
 
 }
 
 
 fn mask_auth(raw_log: &str) -> String {
-    let token_value = raw_log.split_whitespace().nth(9).expect("There are no Bearer Token on the index!");
+    let token_value = &raw_log[0..56];
 
-    let mut reference_token = &token_value[0..=4];
-
-    reference_token = "CLASSIFIED";
-
-    let secret_token = reference_token.to_string();
+    let mut secret_token = token_value.to_string();
+    
+    secret_token.push_str(" CLASSIFIED");
 
     secret_token
 }
 
 fn is_successful(raw_log: &str) -> bool {
-    let status1 = "200";
-    let status2 = "201";
-
-    let success = raw_log.split_whitespace().nth(5).expect("No such thing as Messages");
-
-    if success.contains(status1) || success.contains(status2) {
+    if raw_log.contains("STATUS: 200") || raw_log.contains("STATUS: 201") {
         true
     } else {
         false
